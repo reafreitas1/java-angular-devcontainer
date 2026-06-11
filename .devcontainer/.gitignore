@@ -1,0 +1,8 @@
+cat <<EOF > .gitignore
+.angular/
+node_modules/
+dist/
+bin/
+target/
+.devcontainer/devcontainer-lock.json
+EOF

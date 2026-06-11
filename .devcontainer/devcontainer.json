@@ -1,0 +1,29 @@
+{
+  "name": "Java & Angular Fullstack Env",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "nodeVersion": "20"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "angular.ng-template",
+        "esbenp.prettier-vscode",
+        "rangav.vscode-thunder-client"
+      ]
+    }
+  },
+  "containerEnv": {
+    "JAVA_OPTS": "-Xms512m -Xmx2g",
+    "NG_CLI_ANALYTICS": "false",
+    "NODE_OPTIONS": "--max-old-space-size=2048"
+  },
+  "forwardPorts": [4200, 8080],
+  "postCreateCommand": "npm install -g @angular/cli",
+  "remoteUser": "vscode"
+}
