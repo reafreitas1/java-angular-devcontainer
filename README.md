@@ -56,4 +56,4 @@ The environment comes pre-configured with:
 - `NODE_OPTIONS`: Memory limits for large Angular builds.
 
 ---
-Developed for professional full-stack development.
+Developed by Renata Freitas - [[LinkedIn](https://www.linkedin.com/in/reafreitas1/)]
